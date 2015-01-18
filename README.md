@@ -1,6 +1,23 @@
 # Paraboard
 
-TODO: Write a gem description
+a scoreboard for monitoring status of many workers.
+
+## Usage
+
+```ruby
+require 'paraboard'
+
+para = Paraboard::Registry.new(base_dir: "/tmp/score-board")
+
+# in each worker process
+para.update("this is my current status")
+
+# to read status of all worker processes
+stats = para.read_all
+stats.each do |pid, status|
+  puts "pid(#{pid}) status: #{status}"
+end
+```
 
 ## Installation
 
@@ -17,10 +34,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install paraboard
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
