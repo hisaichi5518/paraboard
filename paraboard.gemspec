@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Paraboard::VERSION
   spec.authors       = ["hisaichi5518"]
   spec.email         = ["hisaichi5518@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{a scoreboard for monitoring status of many workers.}
+  spec.description   = %q{Ruby port of Perl's Parallel::Scoreboard.}
+  spec.homepage      = "https://github.com/hisaichi5518/paraboard"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
