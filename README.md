@@ -2,6 +2,8 @@
 
 a scoreboard for monitoring status of many workers.
 
+Ruby port of Perl's Parallel::Scoreboard.
+
 ## Usage
 
 ```ruby
