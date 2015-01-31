@@ -5,7 +5,7 @@ module Paraboard
   class Registry
     attr_accessor :base_dir
     def initialize(base_dir: nil)
-      @base_dir = base_dir || raise ArgumentError, "required base_dir"
+      @base_dir = base_dir or raise ArgumentError, "required base_dir"
       FileUtils.mkpath(@base_dir) unless Dir.exist?(@base_dir)
     end
 
